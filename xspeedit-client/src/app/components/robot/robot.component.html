@@ -1,0 +1,8 @@
+<h1>Comparaison</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="number" placeholder="saisir chaine article" formControlName="chaineArticle">
+  <button type="submit">comparer les robots</button>
+</form>
+
+<h2 *ngIf="actualProcessed">Robot actuel: {{actualResult}}</h2>
+<h2 *ngIf="optimizedProcessed">Robot optimisé: {{optimizedResult}}</h2> <br/>
